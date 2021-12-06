@@ -13,6 +13,10 @@ namespace SlackNet.WebApi
         /// Only available for OAuth flows with Token Rotation enabled. See more: https://api.slack.com/authentication/rotation
         /// </summary>
         public int? ExpiresIn { get; set; }
+        /// <summary>
+        /// Only available for bot authorization.
+        /// </summary>
+        public string? BotUserId { get; set; }
 
         /// <summary>
         /// Only available for with the identity.team scope.
